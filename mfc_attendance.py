@@ -66,7 +66,7 @@ class Attendance:
         time_form = self.driver.find_element_by_xpath(
             '//input[@name="attendance_schedule_form[attendance_record_forms_attributes][1][time]"]')
         time_form.clear()
-        time_form.send_keys(self.volatile_time(18, 50))
+        time_form.send_keys(self.volatile_time(18, 30))
 
     def save_stamp(self):
         save_button = self.driver.find_element_by_xpath(
